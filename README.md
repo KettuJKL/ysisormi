@@ -1,5 +1,5 @@
 # ysisormi
-Kymmensormijärjestelmän harjoittelemiseen tarkoitettu JavaScript / React proggis
+Kymmensormijärjestelmän harjoittelemiseen tarkoitettu JavaScript / React ohjelma.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
