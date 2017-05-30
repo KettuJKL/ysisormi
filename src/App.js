@@ -8,7 +8,7 @@ import GameBoard from './GameBoard.js';
 const testData = pikkusanasto
 const sanasto = isosanasto
 
-const randomWord = (wordArray) => {
+const randomWordFromArray = (wordArray) => {
   var max = wordArray.length
   var rndIndex = Math.floor(Math.random() * max)
   return wordArray[rndIndex]
@@ -27,9 +27,14 @@ const filterArrayByLength = (wordArray, letterCount) => {
 }
 
 class App extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {randomWord: randomWordFromArray(sanasto.sanalista)}
+  }
 
   componentWillMount() {
     this.shortList = filterArrayByLength(testData.sanalista, 5)
+
   }
   render() {
     return (
@@ -47,9 +52,9 @@ class App extends Component {
         Sanoja löytyy listasta {sanasto.sanalista.length} kappaletta.
         </p>
         <p>
-        Satunnainen sana on {randomWord(sanasto.sanalista)}.
+        Satunnainen sana on {this.state.randomWord}.
         </p>
-        <GameBoard />
+        <GameBoard selectedWord={this.state.randomWord}/>
       </div>
     );
   }
