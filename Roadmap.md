@@ -24,3 +24,8 @@
     9.-12. sanalistan piteneminen
 - tavallisia näpyttelyharjoituksia
 - eri suunnista tulevat sanat
+
+Aika
+- 8h itsekehitys, helatorstai
+- 1,5h tiistai-ilta
+
